@@ -1,20 +1,25 @@
 import HabitListItem from "./HabitListItem";
 
-function HabitList({ habits, updateProgress }) {
+function HabitList({ habits, updateProgress, deleteHabit }) {
+  if (!habits || habits.length === 0) {
+    return (
+      <p className="text-center text-gray-500 w-full">
+        No habits added yet.
+      </p>
+    );
+  }
+
   return (
-    <div className="mt-6 w-full flex flex-col gap-4">
-      {habits.length === 0 ? (
-        <p className="text-gray-500 text-center">No habits added yet.</p>
-      ) : (
-        habits.map((habit, index) => (
-          <HabitListItem
-            key={index}
-            habit={habit}
-            index={index}
-            updateProgress={updateProgress}
-          />
-        ))
-      )}
+    <div className="flex flex-col gap-6 w-full">
+      {habits.map((habit, index) => (
+        <HabitListItem
+          key={index}
+          habit={habit}
+          index={index}
+          updateProgress={updateProgress}
+          deleteHabit={deleteHabit}
+        />
+      ))}
     </div>
   );
 }

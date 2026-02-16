@@ -1,9 +1,9 @@
 function Header() {
-  console.log("Header rendered");
-
   return (
-    <header className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white p-6 text-center text-2xl font-bold">
-      Habit Tracker
+    <header className="bg-gradient-to-r from-purple-600 to-blue-500 py-5 shadow-md">
+      <h1 className="text-center text-white text-3xl font-bold">
+        Habit Tracker
+      </h1>
     </header>
   );
 }
