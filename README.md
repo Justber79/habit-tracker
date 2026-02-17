@@ -1,16 +1,88 @@
-# React + Vite
+# Habit Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
 
-Currently, two official plugins are available:
+Check out the live app here: [Open Demo](https://justyna-habit-tracker.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👩‍💻 Author
 
-## React Compiler
+Created by Justyna Bereza
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/your-profile)
 
-## Expanding the ESLint configuration
+## 📌 Project Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a simple Habit Tracker web application built with React.  
+The application allows users to create habits, track daily progress, and monitor overall completion.
+
+The goal of this project was to practice React fundamentals such as components, state management, props, and working with local storage.
+
+## 🚀 Features
+
+- Add new habits with a daily goal
+- Increase or decrease progress for each habit
+- Prevent negative progress values
+- Automatically mark habits as completed when the goal is reached
+- Delete habits
+- View overall progress (completed vs total habits)
+- Data persistence using localStorage
+- Responsive design for desktop and mobile
+
+## 🛠️ Technologies Used
+
+- React (functional components & hooks)
+- JavaScript (ES6)
+- Tailwind CSS
+- Vite
+- Local Storage API
+
+## 📂 Project Structure
+
+src/
+components/
+Header.jsx
+HabitForm.jsx
+HabitList.jsx
+HabitListItem.jsx
+ProgressActions.jsx
+App.jsx
+main.jsx
+
+💡 How It Works
+• The application stores all habits in React state
+• Each habit contains:
+• name
+• goal
+• progress
+• Users can update progress using buttons
+• When progress reaches the goal, the habit is marked as completed
+• Data is saved in the browser using localStorage so it persists after refresh
+
+🧠 Learning Objectives
+
+This project was created to practice:
+• React components and modular structure
+• useState and useEffect hooks
+• Passing data using props
+• Handling user events (forms, buttons)
+• Conditional rendering
+• Working with localStorage
+• Basic UI/UX design
+
+📈 Future Improvements
+• Add editing habits
+• Add categories or tags
+• Add weekly or monthly tracking
+• Add user authentication
+• Improve UI design
+
+📄 License
+
+This project is licensed under the MIT License.
+
+## 📸 Preview
+
+<p align="center">
+  <img src="./screenshots/form.png" width="250"/>
+  <img src="./screenshots/progress.png" width="250"/>
+</p>
