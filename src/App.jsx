@@ -44,14 +44,14 @@ function App() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
 
-      {/* Habit Form — full width */}
+      {/* Habit Form */}
       <div className="w-full px-4 md:px-8 lg:px-16 py-6">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full transition-transform hover:scale-[1.01]">
           <HabitForm addHabit={addHabit} />
         </div>
       </div>
 
-      {/* Summary cards — full width row */}
+      {/* Summary cards */}
       <div className="w-full px-4 md:px-8 lg:px-16 py-2 flex flex-col md:flex-row gap-6 mb-6">
         <div className="flex-1 bg-white p-6 rounded-lg shadow text-center">
           <p className="text-gray-700 font-medium">Total Habits</p>
@@ -67,7 +67,7 @@ function App() {
         </div>
       </div>
 
-      {/* Habit list — full width cards */}
+      {/* Habit list */}
       <div className="w-full px-4 md:px-8 lg:px-16 py-6 flex flex-col gap-6">
         <HabitList
           habits={habits}
