@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-Check out the live app here: [Open Demo](https://habit-tracker-justber.vercel.app/)
+Check out the live app here: [Open Demo](https://habit-tracker-justber79.vercel.app/)
 
 👩‍💻 Author
 
@@ -84,3 +84,4 @@ This project is licensed under the MIT License.
 
 ![Form Screenshot](screenshots/form.png)
 ![Progress Screenshot](screenshots/progress.png)
+![Desktop Screenshot](screenshots/desktop.png)
