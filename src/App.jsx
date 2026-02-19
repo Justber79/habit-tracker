@@ -41,26 +41,31 @@ function App() {
   const remainingHabits = totalHabits - completedHabits;
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Header />
+  <div className="min-h-screen bg-gray-50 flex flex-col">
+    <Header />
+
+    {/* CENTERED CONTENT */}
+    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
       {/* Habit Form */}
-      <div className="w-full px-4 md:px-8 lg:px-16 py-6">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full transition-transform hover:scale-[1.01]">
+      <div className="py-6">
+        <div className="bg-white p-6 rounded-lg shadow w-full">
           <HabitForm addHabit={addHabit} />
         </div>
       </div>
 
-      {/* Summary cards */}
-      <div className="w-full px-4 md:px-8 lg:px-16 py-2 flex flex-col md:flex-row gap-6 mb-6">
+      {/* Summary cards (UNCHANGED LOGIC, only spacing) */}
+      <div className="py-2 flex flex-col md:flex-row gap-6 mb-6">
         <div className="flex-1 bg-white p-6 rounded-lg shadow text-center">
           <p className="text-gray-700 font-medium">Total Habits</p>
           <p className="text-2xl font-bold text-gray-900">{totalHabits}</p>
         </div>
+
         <div className="flex-1 bg-white p-6 rounded-lg shadow text-center">
           <p className="text-gray-700 font-medium">Completed Today</p>
           <p className="text-2xl font-bold text-green-600">{completedHabits}</p>
         </div>
+
         <div className="flex-1 bg-white p-6 rounded-lg shadow text-center">
           <p className="text-gray-700 font-medium">Remaining Today</p>
           <p className="text-2xl font-bold text-yellow-600">{remainingHabits}</p>
@@ -68,7 +73,7 @@ function App() {
       </div>
 
       {/* Habit list */}
-      <div className="w-full px-4 md:px-8 lg:px-16 py-6 flex flex-col gap-6">
+      <div className="py-6 flex flex-col gap-6">
         <HabitList
           habits={habits}
           updateProgress={updateProgress}
@@ -76,11 +81,11 @@ function App() {
         />
       </div>
 
-      <footer className="text-center text-gray-400 py-4">
-        &copy; 2026 Habit Tracker
-      </footer>
     </div>
-  );
-}
 
+    <footer className="text-center text-gray-400 py-4">
+      © 2026 Habit Tracker
+    </footer>
+  </div>
+)};
 export default App;
